@@ -69,7 +69,7 @@ header{
 .navigation .btnlogin-popup{
     width: 130px;
     height: 50px;
-    background: transparent ;
+    background: transparent;
     border: 2px solid var(--white);
     outline: none;
     border-radius: 6px;
@@ -93,24 +93,48 @@ header{
     border-radius: 20px;
     backdrop-filter: blur(2px);
     box-shadow: 0px 0px 30px rgba(0,0,0,0.3);
-    /*overflow: hidden;*/
+    overflow: hidden;
+    transform: scale(0);
     display: flex;
     justify-content:center;
     align-items: center;
+    transition: transform .5s ease, height .2s ease;
+
+}
+.active-popup{
+    transform: scale(1);
+}
+.wrapper.active{
+    height: 520px;
+}
+.form-box{
+    width: 100%;
+    padding: 40px;
+}
+.wrapper.form-box-login{
+    transition: .18s ease;
+    transform: translateX(0);
+
 }
 .form-box-login{
     width: 100%;
     padding: 40px;   
 }
-.form-box-login{
-
+.wrapper.active .form-box-login{
+    transition: none;
+    transform: translateX(-400px);
 }
 .form-box-register{
     position: absolute;
-    transform: translateX(400px);
-
+    transition: none;
+    transform: translateX(400px)
+}
+.wrapper.active .form-box-register{
+    transition: .18s ease;
+    transform: translateX(0);
 
 }
+
 .icon-close{
     position: absolute;
     top: 0;
@@ -126,7 +150,11 @@ header{
     border-bottom-left-radius: 20px;
     cursor: pointer;
     z-index:1;
-    transition: 0.25s;
+}
+h2{
+    font-size: 2em;
+    color: var(--main-color);
+    text-align: center;
 }
 .icon-close:hover{
     background-color: var(--second-color);
@@ -217,7 +245,7 @@ header{
     color: var(--white);
     border-color: var(--white);
 }
-.log-in-register{
+.login-register{
     font-size: 14.5px;
     text-align: center;
     margin: 20px 0 15px;
@@ -258,6 +286,9 @@ header{
     }
     .form-box{
         padding: 30px;
+    }
+    .form-box-login{
+        transform: translateX(-350px);
     }
 }
 
@@ -305,5 +336,8 @@ header{
     .bnt{
         height: 40px;
         font-size: 14px;
+    }
+    .form-box-login{
+        transform: translateX(-300px);
     }
 }
