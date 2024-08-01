@@ -81,6 +81,7 @@ header{
     font-weight: 500;
     margin-left: 40px;
     transition: .5s;
+    
 }
 
 .navigation .btnlogin-popup:hover{
@@ -267,126 +268,45 @@ h2{
     text-decoration: underline;
 }
 
-/* Responsive Design*/
-@media only screen and (max-width:780px){
-    header{
-        padding: 20px 20px;
-    }
-    .logo{
-        font-size: 1.5em;
-    }
-    .navigation a{
-        font-size: 1em;
-        margin-left: 20px;
-    }
-    .btnlogin-popup{
-        width: 100px;
-        height: 40px;
-        font-size: 1em;
-        margin-left: 20px;
-    }
-    .wrapper{
-        width: 350px;
-        height: 400px;
-    }
-    .form-box{
-        padding: 30px;
-    }
-    .form-box-login{
-        transform: translateX(-350px);
-    }
-}
-
-
-
-@media only screen and (max-width:480px){
-    header{
-        padding: 20px 20px;
-        flex-direction: column;
-        align-items:flex-start;
-    }
-    .logo{
-        font-size: 1.2em;
-        margin-bottom: 10px;
-    }
-    .navigation {
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-
-    }
-    .navigation a{
-        font-size: 0.9em;
-        margin: 10px 0;
-    }
-    .btnlogin-popup{
-        width: 100px;
-        height: 40px;
-        font-size: 1em;
-        margin: 10px 0;
-    }
-    .wrapper{
-        width: 300px;
-        height: 380px;
-    }
-    .form-box{
-    padding: 20px;
-    }
-    .form-box h2{
-        font-size: 1.5em;
-    }
-    .input-box label{
-        font-size: 1em;
-    }
-    .bnt{
-        height: 40px;
-        font-size: 14px;
-    }
-    .form-box-login{
-        transform: translateX(-300px);
-    }
-}
-@media only screen and (max-width: 480px) {
+/* Media Queries */
+@media (max-width: 850px) {
     header {
-        padding: 20px 5%;
-        flex-direction: column;
-        align-items: flex-start;
+        padding: 20px 10px;
     }
 
     .logo {
-        font-size: 1.2em;
-        margin-bottom: 10px;
-    }
-
-    .navigation {
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
+        font-size: 1.7em;
     }
 
     .navigation a {
-        font-size: 0.9em;
-        margin: 10px 0;
+        font-size: 1em;
+        margin-left: 10px;
     }
 
-    .btnlogin-popup {
-        width: 100px;
-        height: 40px;
-        font-size: 1em;
-        margin: 10px 0;
+    .navigation .btnlogin-popup {
+        width: 90px;
+        height: 35px;
+        font-size: 0.9em;
+        margin-left: 10px;
     }
 
     .wrapper {
-        width: 90%;
-        max-width: 300px;
+        width: 60%;
         height: auto;
+        margin-top: 50px;
     }
 
     .form-box {
         padding: 20px;
     }
 
-    .form-box h2 {
+    .icon-close {
+        width: 30px;
+        height: 30px;
+        font-size: 1.2em;
+    }
+
+    h2, .login-title {
         font-size: 1.5em;
     }
 
@@ -394,12 +314,91 @@ h2{
         font-size: 1em;
     }
 
+    .input-box input {
+        font-size: 1em;
+        padding: 0 25px 0 5px;
+    }
+
+    .input-box .icon {
+        font-size: 16px;
+    }
+
+    .remember-forgot {
+        font-size: 0.9em;
+        margin: -5px 0 5px;
+    }
+
     .btn {
-        height: 40px;
+        height: 45px;
+        font-size: 14px;
+        border-radius: 25px;
+    }
+
+    .login-register {
+        font-size: 11px;
+        margin: 5px 0;
+    }
+}
+
+@media (max-width: 480px) {
+    .logo {
+        font-size: 1em;
+    }
+
+    .navigation a {
+        font-size: 0.8em;
+    }
+
+    .navigation .btnlogin-popup {
+        width: 80px;
+        height: 30px;
+        font-size: 0.8em;
+    }
+
+    .wrapper {
+        width: 85%;
+        margin-top: 30px;
+    }
+
+    .form-box {
+        padding: 15px;
+    }
+
+    .icon-close {
+        width: 30px;
+        height: 30px;
+        font-size: 1em;
+    }
+
+    h2, .login-title {
+        font-size: 1.5em;
+    }
+
+    .input-box label {
+        font-size: 0.9em;
+    }
+
+    .input-box input {
+        font-size: 0.9em;
+        padding: 0 20px 0 5px;
+    }
+
+    .input-box .icon {
         font-size: 14px;
     }
 
-    .form-box-login {
-        transform: translateX(-100%);
+    .remember-forgot {
+        font-size: 0.7em;
+    }
+
+    .btn {
+        height: 40px;
+        font-size: 13px;
+        border-radius: 20px;
+    }
+
+    .login-register {
+        font-size: 10px;
+        margin: 5px 0;
     }
 }
