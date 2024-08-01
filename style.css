@@ -188,8 +188,8 @@ h2{
     pointer-events: none;
     transition: 0.5s;
 }
-.input-box input:focus~label,
-.input-box input:valid~label{
+.input-box input:focus ~ label,
+.input-box input:not(:placeholder-shown) ~ label {
     top:-5px
 }
 
@@ -344,5 +344,62 @@ h2{
     }
     .form-box-login{
         transform: translateX(-300px);
+    }
+}
+@media only screen and (max-width: 480px) {
+    header {
+        padding: 20px 5%;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .logo {
+        font-size: 1.2em;
+        margin-bottom: 10px;
+    }
+
+    .navigation {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .navigation a {
+        font-size: 0.9em;
+        margin: 10px 0;
+    }
+
+    .btnlogin-popup {
+        width: 100px;
+        height: 40px;
+        font-size: 1em;
+        margin: 10px 0;
+    }
+
+    .wrapper {
+        width: 90%;
+        max-width: 300px;
+        height: auto;
+    }
+
+    .form-box {
+        padding: 20px;
+    }
+
+    .form-box h2 {
+        font-size: 1.5em;
+    }
+
+    .input-box label {
+        font-size: 1em;
+    }
+
+    .btn {
+        height: 40px;
+        font-size: 14px;
+    }
+
+    .form-box-login {
+        transform: translateX(-100%);
     }
 }
