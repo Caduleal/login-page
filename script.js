@@ -5,11 +5,12 @@ const btnPopup = document.querySelector('.btnlogin-popup');
 const iconClose = document.querySelector('.icon-close');
 
 function initializePage() {
-    wrapper.classList.add('active');
+    // Simula um clique no botão de login
+    btnPopup.click();
 }
 
+// Adiciona o evento DOMContentLoaded para inicializar a página
 document.addEventListener('DOMContentLoaded', initializePage);
-
 
 registerLink.addEventListener('click',() => {
     wrapper.classList.add('active');
