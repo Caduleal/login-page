@@ -17,4 +17,4 @@ A página de login inclui:
 
 ### Acesso ao projeto
 
-O projeto pode ser visualizado clicando [aqui](https://login-page-blush-zeta.vercel.app/)
+O projeto pode ser visualizado clicando [aqui](https://login-page-one-coral.vercel.app/)
